@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>번호:</strong>
+  <%= @post.번호 %>
+</p>
+
+<p>
+  <strong>제목:</strong>
+  <%= @post.제목 %>
+</p>
+
+<p>
+  <strong>내용:</strong>
+  <%= @post.내용 %>
+</p>
+
+<p>
+  <strong>작성자:</strong>
+  <%= @post.작성자 %>
+</p>
+
+<p>
+  <strong>작성시간:</strong>
+  <%= @post.작성시간 %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

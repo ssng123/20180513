@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  번호: 1
+  제목: MyString
+  내용: 
+  작성자: MyString
+  작성시간: 2018-05-08 16:10:47
+
+two:
+  번호: 1
+  제목: MyString
+  내용: 
+  작성자: MyString
+  작성시간: 2018-05-08 16:10:47

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>번호</th>
+      <th>제목</th>
+      <th>내용</th>
+      <th>작성자</th>
+      <th>작성시간</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.번호 %></td>
+        <td><%= post.제목 %></td>
+        <td><%= post.내용 %></td>
+        <td><%= post.작성자 %></td>
+        <td><%= post.작성시간 %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>
